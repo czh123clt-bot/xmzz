@@ -1,0 +1,6 @@
+{
+  "name": "姓名解析",
+  "description": "一款精美、高雅的传统中式姓名解析与祥瑞诗词工具。输入姓名即可生成意境优美的古典诗句、字意内涵与传统五行分析，完美适配移动端与 iOS 全屏模式。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

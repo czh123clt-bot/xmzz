@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;500;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif SC", "Ma Shan Zheng", Georgia, serif;
+  --font-sans: "Inter", "system-ui", sans-serif;
+  
+  --color-cinnabar: #8B0000;
+  --color-ink: #2D2926;
+  --color-paper: #F6F1EB;
+  --color-ivory: #FEFDFB;
+  --color-sand: #E8DFD3;
+}
+
+/* Scrollbar customization for a clean aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F1EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8DFD3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B0000;
+}
+
+/* Elegant ink animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+.pulsing-accent {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.paper-dots {
+  background-image: radial-gradient(circle at 2px 2px, #8B0000 1px, transparent 0);
+  background-size: 24px 24px;
+}
